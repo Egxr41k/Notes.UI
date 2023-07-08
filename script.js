@@ -23,7 +23,7 @@ function displayNoteInForm(note){
 }
 
 function getNoteById(id){
-    fetch(`https://localhost:7014/api/Notes/${id}`)
+    fetch(`https://egxr41k-notesapi.azurewebsites.net/api/Notes/${id}`)
     .then(data => data.json())
     .then(responce => displayNoteInForm(responce));
 }
@@ -40,7 +40,7 @@ function addNote(title, description) {
     }
 
 
-    fetch('https://localhost:7014/api/Notes', {
+    fetch('https://egxr41k-notesapi.azurewebsites.net/api/Notes', {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
@@ -78,7 +78,7 @@ function displayNotes(notes) {
 }
 
 function getAllNotes() {
-    fetch('https://localhost:7014/api/Notes')
+    fetch('https://egxr41k-notesapi.azurewebsites.net/api/Notes')
     .then(data => data.json())
     .then(responce => displayNotes(responce));
 }
@@ -91,7 +91,7 @@ function updateNote(id, title, description){
     }
 
 
-    fetch(`https://localhost:7014/api/Notes/${id}`, {
+    fetch(`https://egxr41k-notesapi.azurewebsites.net/api/Notes/${id}`, {
         method: 'PUT',
         body: JSON.stringify(body),
         headers: {
@@ -118,7 +118,7 @@ saveButton.addEventListener('click', function() {
 });
 
 function deleteNote(id) {
-    fetch(`https://localhost:7014/api/Notes/${id}`, {
+    fetch(`https://egxr41k-notesapi.azurewebsites.net/api/Notes/${id}`, {
         method: 'DELETE',
         headers: {
             "content-type": "application/json"
