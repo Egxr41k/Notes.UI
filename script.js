@@ -113,7 +113,7 @@ saveButton.addEventListener('click', function() {
     if(id) {
         updateNote(id, titleInput.value, descriptionInput.value);
     } else {
-        addNote(id, titleInput.value, descriptionInput.value);
+        addNote(titleInput.value, descriptionInput.value);
     }
 });
 
