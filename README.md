@@ -1,10 +1,17 @@
-# Notes
+# Notes.UI
 
-Client side of full stack application, server side [here](https://github.com/Egxr41k/Notes.API)
+Client-side of full-stack application, server-side [here](https://github.com/Egxr41k/Notes.API)
 
 used only html, css, js
 
 ![Preview](https://github.com/Egxr41k/Notes.UI/blob/master/FirstImg.jpg?raw=true)
+
+##Todo
+1. ~~Base CRUD-methods~~
+2. ~~Publish to github.pages~~
+3. Dark mode/Theme switcher
+4. Add Account and Settings Page
+
 
 ### CRUD operation realization
 
@@ -38,7 +45,7 @@ Read:
 function getNoteById(id){
     fetch(`https://egxr41k-notesapi.azurewebsites.net/api/Notes/${id}`)
     .then(data => data.json())
-    .then(responce => displayNoteInForm(responce));
+    .then(response => displayNoteInForm(response));
 }
 ```
 Update:
