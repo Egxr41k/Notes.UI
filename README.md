@@ -1,8 +1,9 @@
 # Notes.UI
 
+This note manager allows you to add, edit, delete, share your notes, and open other people's notes via links. You can only read notes that you have not created.
 Client-side of full-stack application, server-side [here](https://github.com/Egxr41k/Notes.API)
 
-used only html, css, js
+used HTML, CSS, JS
 
 ![Preview](https://github.com/Egxr41k/Notes.UI/blob/master/FirstImg.jpg?raw=true)
 
